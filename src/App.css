@@ -1,0 +1,31 @@
+/* .nav-links p {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  } */
+
+
+  .navbar {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+
+  .nav-links a :hover{
+    color: rgb(25, 107, 154);
+  }
