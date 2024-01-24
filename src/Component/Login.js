@@ -8,6 +8,7 @@ export default function Login() {
   const [Password, setPassword] = useState("");
   const [status, setStatus] = useState("");
   const [error, seterror] = useState("");
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ export default function Login() {
     if(res.status == 200) {
       setStatus(res.data)
       navigate('/Home')
+      
     }else{
       seterror(res.data)
     }
@@ -31,10 +33,7 @@ export default function Login() {
       
     }
    
-      // .then((res) =>Navigate('/register'))
-      // .catch((e) => console.log(e));
-    // console.log("res",res)
-
+      
 
 
   };
@@ -92,7 +91,7 @@ export default function Login() {
                   {status.message}
                   <p className="text-danger text-center">{error.message}</p>
 
-                  {/* <hr className="my-4" /> */}
+                  
                 </div>
               </div>
             </div>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 
 import logo from './../Link.png';
 export default function Navbar() {
+
+  const [status, setstatus] = useState(true)
 
 
   return (
@@ -44,8 +46,7 @@ export default function Navbar() {
                   <p>Home</p>
                 </Link>
               </li>
-              
-              <li className="nav-links nav-item px-3">
+              {status ? <><li className="nav-links nav-item px-3">
                 <Link to="CreateEmp">
                   
                   <p>Create Employe</p>
@@ -56,7 +57,8 @@ export default function Navbar() {
              
                   <Link to="ListEmploye"> <p>List Employe</p></Link>
                 
-              </li>
+              </li></> :<>no login</> }
+              
             </ul>
           </div>
           

@@ -8,14 +8,14 @@ import ListEmploye from './Component/ListEmploye';
 import EditEmploye from './Component/EditEmploye';
 import Login from './Component/Login';
 import Signup from './Component/Signup';
-// import Spacer from './Component/Spacer';
+
 
 function App() {
   return (
     <div className="App">
       <div className='top-space'></div>
       
-      {/* <Spacer height="50px"/> */}
+      
       <Navbar/>
 
       <Routes>
